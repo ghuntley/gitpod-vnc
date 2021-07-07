@@ -1,1 +1,8 @@
 image: gitpod/workspace-full-vnc
+
+tasks:
+  - init: sudo ln -s /opt/novnc/utils/novnc_proxy /opt/novnc/utils/launch.sh  
+
+ports:
+  - port: 5900
+    onOpen: open-browser
